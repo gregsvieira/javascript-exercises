@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios - Condições</title>
+
+</head>
+<body>
+
+    <h1>Exercício Nota:</h1>
+    Qual a nota? <input type="number" id="notas">
+    <input type="button" id="botao" value="Enviar" onclick="avaliar()">
+
+    <div id="resultado">Digite somente um número entre 0 e 10</div>
+    
+<script>
+//entre zero e dez, mensagem erro caso valor inválido
+function avaliar() {
+var notas = document.querySelector('input#notas');
+
+var nota = Number(notas.value)
+
+var botao = document.querySelector('input#botao');
+
+var resultado = document.querySelector('div#resultado');
+
+botao.addEventListener('click', avaliar)
+
+switch (nota) {
+        case 0:
+        resultado.innerText = `Você digitou ${nota}. Está correto!`
+        break
+        case 1:
+        resultado.innerText = `Você digitou ${nota}. Está correto!`
+        break
+        case 2:
+        resultado.innerText = `Você digitou ${nota}. Está correto!`
+        break
+        case 3:
+        resultado.innerText = `Você digitou ${nota}. Está correto!`
+        break
+        case 4:
+        resultado.innerText = `Você digitou ${nota}. Está correto!`
+        break
+        case 5:
+        resultado.innerText = `Você digitou ${nota}. Está correto!`
+        break
+        case 6:
+        resultado.innerText = `Você digitou ${nota}. Está correto!`
+        break
+        case 7:
+        resultado.innerText = `Você digitou ${nota}. Está correto!`
+        break
+        case 8:
+        resultado.innerText = `Você digitou ${nota}. Está correto!`
+        break
+        case 9:
+        resultado.innerText = `Você digitou ${nota}. Está correto!`
+        break
+        case 10:
+        resultado.innerText = `Você digitou ${nota}. Está correto!`
+        break
+        default:
+        resultado.innerText = `[ERRO] digitou ${nota}. Somente números entre 0 a 10!`
+
+}
+
+
+ }
+
+</script>
+
+
+</body>
+</html>

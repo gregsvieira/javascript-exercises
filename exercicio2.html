@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário</title>
+</head>
+<body>
+    <p id="texto">
+            Login:
+    </p> 
+    <p>
+        <strong>
+            Usuário:
+        </strong>
+    </p> 
+    <p>
+        <input type="text" id="usuario" >
+    </p>
+    <p>
+        <strong>
+            Senha:
+        </strong>
+    </p> 
+    <p>
+        <input type="password" id="senha" >
+    </p>
+    <p>
+        <input type="button" id="botao" value="enviar">
+    </p>
+
+    <script>
+                botao.addEventListener('click', enviar)
+
+        function enviar(){
+
+        var botao = document.querySelector('botao')
+
+        var usuario = document.querySelector('input#usuario')
+
+        var senha = document.querySelector('input#senha')
+
+        var user = (usuario.value)
+
+        var password = (senha.value)
+
+        if (password == user) {
+            texto.innerText = 'Usuário não pode ser o mesmo que a senha'
+        } else {
+            texto.innerText = 'Registrado!'
+        }
+            
+
+        }
+
+        
+
+    </script>
+</body>
+</html>
